@@ -4,6 +4,7 @@ Machine learning framework for predicting time-resolved electronic properties in
 
 </p>
 <img src="assets/kushal_gp.png" alt="Framework overview" width="600">
+
 ---
 
 ## What’s inside 📂
