@@ -20,7 +20,7 @@ stored in Git.  Download the tar archives from the *Releases* tab:
 
 ---
 
-## What’s inside 📂
+## What’s inside
 | Folder | Contents |
 |--------|----------|
 | `src/` | Training & inference scripts for **ALIGNN** and **CGCNN** |
