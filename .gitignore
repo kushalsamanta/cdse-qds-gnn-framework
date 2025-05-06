@@ -1,6 +1,0 @@
-# ignore full AIMD trajectories (use release tarballs instead)
-data/structures/Cd28Se17Cl22_AIMD_trajectories/
-data/structures/Cd28Se17O22H22_AIMD_Trajectories/
-
-# BUT keep the small demo set
-!data/structures/demo*
