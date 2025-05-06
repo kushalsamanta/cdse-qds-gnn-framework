@@ -5,10 +5,11 @@ Machine learning framework for predicting time-resolved electronic properties in
 
 <img src="assets/kushal_gp.png" alt="Framework overview" width="800">
 
-<p align="justify">
-### Full AIMD trajectories (30 000 files)
 
-To keep this repository small, the **complete** 10 ps trajectories are **not**
+<p align="justify">
+# Full AIMD trajectories (30 000 files)
+
+To keep this repository small, the **complete** 15 ps trajectories are **not**
 stored in Git.  Download the tar archives from the *Releases* tab:
 
 | System | Release asset | Size |
@@ -16,11 +17,6 @@ stored in Git.  Download the tar archives from the *Releases* tab:
 | Cd₂₈Se₁₇Cl₂₂ | [`Cd28Se17Cl22_15000_vasp.tar.gz`](https://github.com/kushalsamanta/cdse-qds-gnn-framework/releases/download/v1.0-data/Cd28Se17Cl22_15000_vasp.tar.gz) | 20 MB |
 | Cd₂₈Se₁₇(OH)₂₂ | [`Cd28Se17OH22_15000_vasp.tar.gz`](https://github.com/kushalsamanta/cdse-qds-gnn-framework/releases/download/v1.0-data/Cd28Se17OH22_15000_vasp.tar.gz) | 27 MB |
 
-# Example: fetch the Cl‑passivated set
-curl -L -O \
-  https://github.com/kushalsamanta/cdse-qds-gnn-framework/releases/download/v1.0-data/Cd28Se17Cl22_15000_vasp.tar.gz
-
-tar -xzf Cd28Se17Cl22_15000_vasp.tar.gz -C data/structures
 </p>
 
 ---
