@@ -1,9 +1,11 @@
 # CdSe-QDs-GNN-Framework
 <p align="justify">
 Machine learning framework for predicting time-resolved electronic properties in ligand-passivated CdSe quantum dots (Cd<sub>28</sub>Se<sub>17</sub>X<sub>22</sub>, X = Cl, OH). This repository includes AIMD trajectories, DFT-calculated electronic properties, and graph-based neural network models (ALIGNN and CGCNN), along with atom-specific importance analyses via Feature Nullification Analysis (FNA). Developed for studying bandgap and subgap fluctuations over extended trajectories using transfer learning and minimal DFT sampling.
+</p>
 
 <img src="assets/kushal_gp.png" alt="Framework overview" width="800">
 
+<p align="justify">
 ### Full AIMD trajectories (30 000 files)
 
 To keep this repository small, the **complete** 10 ps trajectories are **not**
@@ -19,7 +21,7 @@ curl -L -O \
   https://github.com/kushalsamanta/cdse-qds-gnn-framework/releases/download/v1.0-data/Cd28Se17Cl22_15000_vasp.tar.gz
 
 tar -xzf Cd28Se17Cl22_15000_vasp.tar.gz -C data/structures
-
+</p>
 
 ---
 
@@ -34,4 +36,3 @@ tar -xzf Cd28Se17Cl22_15000_vasp.tar.gz -C data/structures
 
 ---
 
-</p>
