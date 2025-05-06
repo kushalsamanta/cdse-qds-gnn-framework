@@ -6,7 +6,7 @@ Machine learning framework for predicting time-resolved electronic properties in
 <img src="assets/kushal_gp.png" alt="Framework overview" width="800">
 
 
-### Full AIMD trajectories (30 000 files)
+## Full AIMD trajectories (30 000 files)
 
 To keep this repository small, the **complete** 15 ps trajectories are **not**
 stored in Git.  Download the tar archives from the *Releases* tab:
