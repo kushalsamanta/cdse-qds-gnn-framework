@@ -2,7 +2,7 @@
 <p align="justify">
 Machine learning framework for predicting time-resolved electronic properties in ligand-passivated CdSe quantum dots (Cd<sub>28</sub>Se<sub>17</sub>X<sub>22</sub>, X = Cl, OH). This repository includes AIMD trajectories, DFT-calculated electronic properties, and graph-based neural network model (ALIGNN), along with atom-specific importance analyses via Feature Nullification Analysis (FNA). Developed for studying bandgap and subgap fluctuations over extended trajectories using transfer learning and minimal DFT sampling.
 
-
+<p>
 <img src="assets/kushal_gp.png" alt="Framework overview" width="800">
 
 
@@ -12,10 +12,7 @@ Machine learning framework for predicting time-resolved electronic properties in
 ## Structure–property evolution
 <p align="justify">
 
-The short clip below shows how the **Cd<sub>28</sub>Se<sub>17</sub>Cl<sub>22</sub>**
-core–ligand geometry (left) evolves together with the ensemble‑predicted
-bandgap trajectory (right) over the first 10 ps of the AIMD simulation, 
-highlighting the structure–property correlations captured by ALIGNN.
+The short clip below shows how the **Cd<sub>28</sub>Se<sub>17</sub>Cl<sub>22</sub>** core–ligand geometry (left) evolves together with the ensemble‑predicted bandgap trajectory (right) over the first 10 ps of the AIMD simulation, highlighting the structure–property correlations captured by ALIGNN.
 
 <p>
 <img src="assets/structure_property.gif" alt="Structure and band‑gap evolution" width="800">
