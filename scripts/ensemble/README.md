@@ -1,5 +1,5 @@
 # Ensemble Automation  
-**ALIGNN workflow for Cd<sub>28</sub>Se<sub>17</sub>Cl<sub>22</sub> quantum‑dot band‑gap training, prediction, atom‑level interpretation & transfer‑learning to extended trajectories**
+**ALIGNN workflow for Cd<sub>28</sub>Se<sub>17</sub>Cl<sub>22</sub> quantum‑dot bandgap training, prediction, atom‑level interpretation & transfer‑learning to extended trajectories**
 
 This repository bundles every script and guideline you need to
 
