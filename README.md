@@ -8,8 +8,9 @@ Machine learning framework for predicting time-resolved electronic properties in
 
 
 ---
-<p align="justify">
+
 ## Structure–property evolution
+<p align="justify">
 
 The short clip below shows how the **Cd<sub>28</sub>Se<sub>17</sub>Cl<sub>22</sub>**
 core–ligand geometry (left) evolves together with the ensemble‑predicted
