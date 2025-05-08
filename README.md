@@ -1,6 +1,6 @@
 # CdSe-QDs-GNN-Framework
 <p align="justify">
-Machine learning framework for predicting time-resolved electronic properties in ligand-passivated CdSe quantum dots (Cd<sub>28</sub>Se<sub>17</sub>X<sub>22</sub>, X = Cl, OH). This repository includes AIMD trajectories, DFT-calculated electronic properties, and graph-based neural network models (ALIGNN and CGCNN), along with atom-specific importance analyses via Feature Nullification Analysis (FNA). Developed for studying bandgap and subgap fluctuations over extended trajectories using transfer learning and minimal DFT sampling.
+Machine learning framework for predicting time-resolved electronic properties in ligand-passivated CdSe quantum dots (Cd<sub>28</sub>Se<sub>17</sub>X<sub>22</sub>, X = Cl, OH). This repository includes AIMD trajectories, DFT-calculated electronic properties, and graph-based neural network model (ALIGNN), along with atom-specific importance analyses via Feature Nullification Analysis (FNA). Developed for studying bandgap and subgap fluctuations over extended trajectories using transfer learning and minimal DFT sampling.
 <p>
 
 <img src="assets/kushal_gp.png" alt="Framework overview" width="800">
@@ -19,15 +19,25 @@ stored in Git.  Download the tar archives from the *Releases* tab:
 </p>
 
 ---
+## Zenodo archive (everything in one place)
 
-## What’s inside
-| Folder | Contents |
-|--------|----------|
-| `src/` | Training & inference scripts for **ALIGNN** and **CGCNN** |
-| `assets/` | Figures (framework overview, key results) |
-| `data/` | Small demo trajectory + DFT labels (full datasets on Zenodo) |
-| `notebooks/` | Reproduce the paper’s parity plots and time‑series |
-| `tests/` | Minimal pytest suite for CI |
+All numerical artefacts supporting this repository have been deposited on Zenodo:
+
+**https://doi.org/10.5281/zenodo.15359153**
+
+What you’ll find inside the archive (≈ 4.37 GB):
+
+| Category | Contents |
+|----------|----------|
+| **AIMD data** | 15 ps, 1 fs‑step trajectories for Cd₂₈Se₁₇Cl₂₂(`*.vasp`) |
+| **DFT labels** | Bandgap values used for ALIGNN training (`id_prop.csv`) |
+| **Ensemble models** | 20 ALIGNN checkpoints (`run_*/temp/checkpoint.pt`, 0 – 10 ps training) |
+| **Predictions** | Per‑frame bandgap for 0 – 10 ps (`prediction.csv`) |
+| **Atom‑importance** | Feature Nullification outputs for every <em>model × atom</em> (`atom_imp_*`) |
+| **Transfer‑learning** | Fine‑tuned checkpoints + predictions for the extended 10 – 15 ps window |
+| **SLURM logs & scripts** | All job scripts |
+
+Download the archive to reproduce every figure in the manuscript or to kick‑start your own experiments with pre‑trained models.
 
 ---
 
