@@ -35,6 +35,32 @@ reduces scatter and delivers band‑gap predictions that closely match DFT.
 
 ---
 
+## Atom‑level importance 
+
+Feature Nullification Analysis (FNA) bins atoms by how much removing their
+information increases the ensemble RMSE:
+
+| Group (meV bin) | Atoms |
+|-----------------|-------|
+| **G 1** 30 – 25 meV | Se2, Se1 |
+| **G 2** 25 – 20 meV | Se5, Cl7 |
+| **G 3** 20 – 15 meV | Se16, Cl3, Cl9, Cl10 |
+| **G 4** 15 – 10 meV | Se3, Cl13, Se7, Se11, Se8, Se6, and so on|
+| *…* | *lower‑impact atoms* |
+
+The GIF couples the **bar‑chart of importance scores** (left) with the
+**highlighted atom positions** inside the Cd<sub>28</sub>Se<sub>17</sub>Cl<sub>22</sub>  
+structure (right), making it easy to see which sites dominate bandgap
+fluctuations.
+
+<p align="center">
+  <img src="assets/atom_importance_plot.gif"
+       alt="Grouped atom importance versus 3‑D positions"
+       width="800">
+</p>
+
+---
+
 ## Full AIMD trajectories (30 000 files)
 
 To keep this repository small, the **complete** 15 ps trajectories are **not**
