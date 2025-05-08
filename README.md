@@ -17,9 +17,9 @@ core–ligand geometry (left) evolves together with the ensemble‑predicted
 bandgap trajectory (right) over the first 10 ps of the AIMD simulation, 
 highlighting the structure–property correlations captured by ALIGNN.
 
-
-<img src="assets/structure_property.gif" alt="Structure and band‑gap evolution" width="800">
 <p>
+<img src="assets/structure_property.gif" alt="Structure and band‑gap evolution" width="800">
+
 
 ---
 
