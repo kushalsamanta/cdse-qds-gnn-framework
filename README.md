@@ -6,6 +6,22 @@ Machine learning framework for predicting time-resolved electronic properties in
 <img src="assets/kushal_gp.png" alt="Framework overview" width="800">
 
 
+---
+
+## Structure–property animation 🎞️
+
+The short clip below shows how the **Cd<sub>28</sub>Se<sub>17</sub>Cl<sub>22</sub>**
+core–ligand geometry (left) evolves together with the ensemble‑predicted
+band‑gap trajectory (right) over the first 10 ps of the AIMD simulation.
+Stable Cl passivation keeps band‑gap fluctuations within a narrow window,
+highlighting the structure–property correlations captured by ALIGNN.
+
+<p align="center">
+  <img src="assets/structure_property.gif" alt="Structure and band‑gap evolution" width="700">
+</p>
+
+---
+
 ## Full AIMD trajectories (30 000 files)
 
 To keep this repository small, the **complete** 15 ps trajectories are **not**
