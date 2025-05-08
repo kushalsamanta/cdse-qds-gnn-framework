@@ -8,7 +8,7 @@ This repository bundles every script and guideline you need to
 * compute **atom‑wise importance scores** with *Feature Nullification Analysis* (FNA)  
 * **transfer‑learn** those models to a 10 – 15 ps continuation
 
-** A frozen snapshot of all checkpoints, predictions and analysis artefacts lives on Zenodo: **
+**A complete archive—raw AIMD trajectories, trained ALIGNN checkpoints, prediction outputs and every helper script—can be found on Zenodo:**
 `<https://doi.org/10.5281/zenodo.15359153>`
 
 ---
@@ -47,7 +47,7 @@ Our main additions are
 
 ### 2.1 Training subset logic
 * **AIMD trajectory**: 10 ps @ 1 fs → 10,001 frames  
-* **Subsample** every 10 fs step size → 1 000 geometries (10 %)  
+* **Subsample** every 10 fs step size → 1000 geometries (10 %)  
 * For each run *i* (0 – 19)  
   1. shuffle the 1 000 frames  
   2. split **80 %/10 %/10 %** → train/val/test  
@@ -56,16 +56,16 @@ Our main additions are
 The 20‑model ensemble reduces variance and captures dynamical fluctuations robustly.
 
 ### 2.2 Ensemble prediction
-* **9 001 unseen frames** (the other 90 %) are sent to every model.  
+* **9001 unseen frames** (the other 90 %) are sent to every model.  
 * Per‑frame outputs are **averaged** across the 20 runs.
 ### 2.3 Atom importance (FNA)
-* During inference we **zero** the node & edge features of target atom.  
+* During inference we **zero** the node & edge features of target atom with its neighbour.  
 * The resulting drop in predicted band‑gap is interpreted as that atom’s **importance**.  
 * Outputs reside in `run_<i>/atom_imp_<Species><Index>/` folders (see in Zenodo).
 
 ### 2.4 Transfer learning (10 – 15 ps)
 1. Collect **500 new structures + DFT labels** (10 – 15 ps, 10 fs spacing).  
-2. Load all 20 pretrained models.  
+2. Load all 20 pretrained models instead of training from scratch.
 3. **Freeze** elemental embeddings & first three message‑passing blocks.  
 4. Fine‑tune remaining layers with `fine_tune_modified.py` (≈ 50 epochs, early stop).  
 5. Predict extended‑trajectory band‑gaps at a fraction of the original cost.
