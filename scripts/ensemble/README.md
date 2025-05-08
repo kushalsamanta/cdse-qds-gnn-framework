@@ -61,7 +61,7 @@ The 20‑model ensemble reduces variance and captures dynamical fluctuations rob
 ### 2.3 Atom importance (FNA)
 * During inference we **zero** the node & edge features of target atom.  
 * The resulting drop in predicted band‑gap is interpreted as that atom’s **importance**.  
-* Outputs reside in `run_<i>/atom_imp_<Species><Index>/` folders (zenodo: `<https://doi.org/10.5281/zenodo.15359153>`.
+* Outputs reside in `run_<i>/atom_imp_<Species><Index>/` folders (see in Zenodo).
 
 ### 2.4 Transfer learning (10 – 15 ps)
 1. Collect **500 new structures + DFT labels** (10 – 15 ps, 10 fs spacing).  
