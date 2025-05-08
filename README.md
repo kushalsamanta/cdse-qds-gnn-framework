@@ -20,6 +20,21 @@ The short clip below shows how the **Cd<sub>28</sub>Se<sub>17</sub>Cl<sub>22</su
 
 ---
 
+## Ensemble‑model accuracy 
+
+The animation below compares **parity plots** for every individual ALIGNN model
+(run 0 → run 19, left panel) with the **ensemble‑averaged parity plot** (right panel).
+A tight 1:1 line on the right demonstrates how averaging 20 models
+reduces scatter and delivers band‑gap predictions that closely match DFT.
+
+<p align="center">
+  <img src="assets/ALIGNN_ensemble_model_parity_plots.gif"
+       alt="Parity plots for individual runs vs. ensemble average"
+       width="800">
+</p>
+
+---
+
 ## Full AIMD trajectories (30 000 files)
 
 To keep this repository small, the **complete** 15 ps trajectories are **not**
