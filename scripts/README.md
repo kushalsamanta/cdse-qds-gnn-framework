@@ -9,7 +9,7 @@ This repository bundles every script and guideline you need to
 * **transfer‑learn** those models to a 10 – 15 ps continuation
 
 **A complete archive—raw AIMD trajectories, trained ALIGNN checkpoints, prediction outputs and every helper script—can be found on Zenodo:**
-`<https://doi.org/10.5281/zenodo.15359153>`
+<https://doi.org/10.5281/zenodo.15359153>
 
 ---
 
